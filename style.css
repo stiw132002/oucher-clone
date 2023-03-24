@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+   min-height: 100%;
+    background-color: black;
+    padding: 2vh 3vh;
+}
+nav{
+    color: white;
+    width: 100%;
+    height: 10vh;
+    /* background-color: rgb(174, 25, 25); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+nav >h1{
+    font: 700 2.5vmax "Gilroy";
+    letter-spacing: 2px;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    font: 200 1vmax "Gilroy";
+    
+}
+nav > ul > li{
+    padding: 0 1vh;
+}
+ nav > span {
+    font: 200 2.5vh "Gilroy";
+    display: flex;
+    align-items: centre;
+    }
+    nav > span >i{
+        padding-left: 10px;
+ }
+ 
+ .section1{
+    width: 100%;
+    height: 70vh;
+    /* background-color: white; */
+    margin-top: 3vmax;
+    display: flex;
+ }
+ .s1-left,.s1-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: grey; */
+
+ }
+ .s1-left{
+    padding: 2.5vmax;
+    
+ }
+ .s1-left h1{
+    font: 400 6.5vmax "Gilroy";
+    color: white;
+    line-height: 7vmax;
+
+}
+.s1-left img{
+    height: 4.5vmax;
+    width: 4.5vmax;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 4px solid black;
+    }
+.s1-left img:nth-child(2){
+    transform: translateX(-3vmax);
+}
+.s1-left img:nth-child(3){
+    transform: translateX(-6vmax);
+}
+.s1-left span{
+    display: inline-block;
+    margin-left: -7vmax;
+}
+
+.s1-left hr{
+    margin-top: 2.5vmax;
+
+}
+.s1-left .s1-box{
+    color: white;
+    padding:  1.5vmax 0;
+    font: 300 1vmax "Gilroy";
+    display: flex;
+    justify-content: space-between;
+}
+.s1-right{
+    background-color: #b3a0cf;
+    padding-left: 3vmax;
+    border-radius: 1vmax;
+    clip-path: polygon(78% 0, 78% 11%, 100% 11%, 100% 100%, 0 100%, 0 0, 51% 0);
+    background-image: url(s1-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;   
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1vmax;
+
+}
+
+.circles {
+    position: absolute;
+    right: 7%;
+    top: 21%;
+    
+}
+.circles span{
+    display: inline-block; 
+    width: 1.2vmax;
+    height: 1.2vmax;
+    /* background-color: white; */
+    border-radius: 50%;
+    margin-left: 0.7vmax;
+    border: 2px solid white;
+}
+
+.circles span:first-child{
+    background-color: white;
+}
+.s1r-title{
+    width: 100%;
+    margin-top: 1.5vmax;
+    font: 600 1vmax "Gilroy";
+    /* background-color: white; */
+    
+}
+.s1r-input{
+     width: 100%;
+    height: 5%;
+    border-radius: 2vmax;
+    border: 1px solid black;
+    padding: 2vmax .5vmax 2vmax 2.5vmax;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 600 1vmax "Gilroy";
+   
+        
+}
+.s1r-input >i{
+    font-size: 3vmax;
+}
+
+.section2{
+    width: 100%;
+    height: 40vh;
+    /* background-color: grey; */
+    display: flex;
+    margin-top:5.5vmax ;
+}
+.s2-left{
+    width: 25%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  
+    /* background: rgb(151, 151, 216); */
+
+}
+.s2-right{
+    width: 75%;
+    height: 40vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+
+}
+.s21-play{
+    display: flex;
+    align-items: center;
+}
+.s21-play i {
+    font-size: 3vmax;
+    color: white;
+    margin-left: 2vmax;
+}
+.s21-play p {
+    font: 300 1vmax "Gilroy";
+    color: white ;
+    margin-left: 1vmax;
+}
+.s21-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 2vmax;
+    
+}
+.s21-buttons> button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font: 400 1vmax "Gilroy";
+    margin-bottom: 0.5vmax;
+    padding: 0.8vmax 2vmax;
+    border-radius: 2vmax;
+}
+.s2r-box{
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon(55% 7%, 63% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+    border-radius: 1vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3vmax 2vmax 2vmax 2vmax;
+}
+.s2r-box1 {
+    background-color: #fd5e09;
+}
+.s2r-box2 {
+    background-color: #e0e0e0;
+}
+.s2r-box3 {
+    background-color: #fdc959;
+}
+.s2r-box1 p{
+    font: 600 1.2vmax "Gilroy";
+    
+}
+.s2r-box1 i{
+    font-size: 5vmax;
+}
+.s2r-header{
+    display: flex;
+    justify-content: space-between;
+}
+.s2r-header .circles {
+    position: initial;
+
+}
+
+.s2r-header .circles span {
+    width: 0.5vmax;
+    height: 0.5vmax;
+    border-color: black;
+    
+    
+}
+.s2r-header .circles span:first-child {
+    background-color: black;
+    margin: 0;
+
+    margin-right: -.6vmax;
+}
+.s2r-header i{
+    font-size: 4vmax;
+}
+.s2r-box2{
+    font: 600  2.4vmax "Gilroy";
+}
+.s2r-box3 p{
+    font: 700  1.2vmax "Gilroy"
+
+}
+.s2r-box3 h1{
+    font-size: 4vmax;
+    word-spacing: -1vmax;
+}
